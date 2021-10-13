@@ -9,4 +9,23 @@ elMenu.addEventListener("click",function(){
   elLine2.classList.toggle("remove-line");
   elLine1.classList.toggle("rotate1")
   elLine3.classList.toggle("rotate3")
+});
+
+window.addEventListener("scroll",function() {
+  header = document.querySelector("header");
+  header.classList.toggle("header-bg",window.scrollY > 60);
 })
+
+var typed = new Typed('.animate', {
+  strings: [
+    "Sohibjon",
+    "Developer",
+    "Web Designer",
+    "Freelancer",
+    "Creative"
+  ],
+  typeSpeed: 70,
+  backSpeed: 70,
+  loop: true
+});
+
