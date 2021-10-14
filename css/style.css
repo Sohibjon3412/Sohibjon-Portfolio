@@ -447,18 +447,19 @@ img {
   margin-top: 100px;
 }
 .offer__img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 .laptop-img {
-  width: 120px;
+  width: 100px;
 }
 .camera-img {
-  width: 120px;
+  width: 100px;
+  
 }
 .offer__item {
   position: relative;
@@ -495,6 +496,7 @@ img {
   border-left: 1px solid;
   border-bottom: 1px solid;
   transition: all 0.3s ease-in-out;
+  
 }
 .offer__content::after {
   content: "";
@@ -556,7 +558,6 @@ img {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 100px;
   background-color: var(--ooo);
 }
 .stat__list {
@@ -575,9 +576,9 @@ img {
   color: var(--white-color);
   transition: all 0.5s ease;
 }
-.stat__icon:hover {
+.stat__item:hover .stat__icon {
   transform: rotate(360deg);
-  color: rgb(223, 20, 20);
+  color: rgb(222, 245, 13);
 }
 .stat__num {
   font-size: 48px;
@@ -595,6 +596,138 @@ img {
   line-height: 1.5em;
   font-weight: 500;
 }
+/* ------------PORTFOLIO------- */
+.my-portfolio {
+  width: 100%;
+  padding-top: 100px;
+  background-color: #c9c9c9;
+}
+.portfolio__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--ooo);
+  text-align: center;
+}
+.portfolio__sort {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+.port-sort__item:not(:first-child) {
+  margin-left: 40px;
+}
+.port-sort__item {
+  font-size: 12px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.port-sort__item--active {
+  border-bottom: 1px solid #000;
+}
+.portfolio__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.portfolio__item {
+  /* width: 25%; */
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.portfolio__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.portfolio__item-last {
+  border: 2px dashed #000;
+  height: 280px;
+  width: 25%;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48%;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--ooo);
+  font-weight: 600;
+}
+.portholio__wrapper {
+  width: 92%;
+  height: 0;
+  background-color: #000;
+  opacity: 0.8;
+  padding: 0 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transition: all 0.5s ease;
+}
+.portfolio__item:hover .portholio__wrapper {
+  height: 97%;
+}
+.portfolio__item:hover .p-wrap__list {
+  bottom: 45%;
+  opacity: 1;
+}
+.p-wrap__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45%;
+  position: absolute;
+  left: 32%;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.p-wrap__item:not(:last-child) {
+  margin-right: 15px;
+}
+.p-wrap__link {
+  color: var(--white-color);
+  font-size: 25px;
+  background-color: var(--ooo);
+  opacity: 0.8;
+  padding: 7px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.p-wrap__link:hover {
+  color: var(--ooo);
+  background-color: var(--white-color);
+}
+
+
 
 
 
@@ -637,6 +770,12 @@ img {
     float: left;
     margin-bottom: 20px;
   }
+  .portholio__wrapper {
+    width: 94%;
+  }
+  .p-wrap__list {
+    left: 34%;
+  }
 }
 @media screen and (max-width:768px) {
   .header__menu {
@@ -664,15 +803,27 @@ img {
   .stat__item {
     float: left;
   }
+  .portholio__wrapper {
+    width: 97.4%;
+  }
+  .p-wrap__list {
+    left: 40%;
+  }
 }
 @media screen and (max-width:610px) {
   .hero-content__title {
     font-size: 1.5em;
   }
+  .portholio__wrapper {
+    width: 96%;
+  }
 }
 @media screen and (max-width:460px) {
   .hero-content__title {
     font-size: 1.2em;
+  }
+  .portholio__wrapper {
+    width: 94%;
   }
 }
 
