@@ -619,8 +619,10 @@ img {
   align-items: center;
   flex-flow: row wrap;
   justify-content: center;
+  margin: 0 auto;
   margin-top: 60px;
   text-align: center;
+  
 }
 .port-sort__item:not(:first-child) {
   margin-left: 40px;
@@ -650,6 +652,7 @@ img {
   overflow: hidden;
   border-radius: 5px;
   position: relative;
+  margin-bottom: 30px;
 }
 .portfolio__img {
   position: absolute;
