@@ -600,6 +600,7 @@ img {
 .my-portfolio {
   width: 100%;
   padding-top: 100px;
+  padding-bottom: 70px;
   background-color: #c9c9c9;
 }
 .portfolio__title {
@@ -619,6 +620,7 @@ img {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 60px;
+  text-align: center;
 }
 .port-sort__item:not(:first-child) {
   margin-left: 40px;
@@ -644,7 +646,6 @@ img {
   margin-top: 50px;
 }
 .portfolio__item {
-  /* width: 25%; */
   height: 300px;
   overflow: hidden;
   border-radius: 5px;
@@ -660,8 +661,6 @@ img {
 .portfolio__item-last {
   border: 2px dashed #000;
   height: 280px;
-  width: 25%;
-  padding: 10px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -669,7 +668,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 48%;
+  margin-top: 50%;
+  /* transform: translateY(-50%); */
   font-size: 20px;
   text-decoration: none;
   color: var(--ooo);
@@ -700,9 +700,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 45%;
   position: absolute;
-  left: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 0;
   opacity: 0;
   transition: all 0.5s ease;
@@ -734,7 +734,7 @@ img {
 
 @media screen and (max-width:1200px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
@@ -773,9 +773,9 @@ img {
   .portholio__wrapper {
     width: 94%;
   }
-  .p-wrap__list {
+  /* .p-wrap__list {
     left: 34%;
-  }
+  } */
 }
 @media screen and (max-width:768px) {
   .header__menu {
@@ -806,9 +806,9 @@ img {
   .portholio__wrapper {
     width: 97.4%;
   }
-  .p-wrap__list {
-    left: 40%;
-  }
+  /* .p-wrap__list {
+    left: 44%;
+  } */
 }
 @media screen and (max-width:610px) {
   .hero-content__title {
