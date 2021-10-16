@@ -786,13 +786,61 @@ img {
 .portfolio__more-btn:hover {
   color: var(--white-color);
 }
-
-
-
-
-
-
-
+/* -------BLOG-------- */
+.blog {
+  padding-top: 70px;
+}
+.blog__title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  color: var(--ooo);
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.blog__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.blog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.blog__quote {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0px;
+  padding: 10px 15px;
+  background-color: var(--ooo);
+  opacity: 0.8;
+}
+.quote__text,
+.quote__author {
+  color: var(--white-color);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 20px;
+  
+  margin: 5px 5px 10px 5px;
+}
+.blog__item:hover .blog__img{
+  transform: scale(1.2);
+}
 
 
 
@@ -836,6 +884,14 @@ img {
   }
   .portholio__wrapper {
     width: 94%;
+  }
+  .blog__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog__item {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width:768px) {
