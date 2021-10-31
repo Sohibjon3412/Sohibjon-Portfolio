@@ -73,7 +73,7 @@ img {
 .heade__nav {
   width: 100%;
   z-index: 1000;
-  padding: 0 30px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,14 +84,12 @@ img {
   line-height: 0.30px;
 }
 .navbar__logo {
-  text-decoration: none;
-  color: var(--white-color);
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
   z-index: 13;
   position: relative;
   transition: all 0.4s ease;
+}
+.navbar__logo-link {
+  width: 90px;
 }
 .navbar__logo-des {
   z-index: 11;
