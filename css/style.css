@@ -627,9 +627,11 @@ img {
   cursor: pointer;
   letter-spacing: 2px;
   font-weight: 400;
+  transition: all 0.3s ease;
 }
 .port-sort__item--active {
   border-bottom: 1px solid #000;
+  transition: all 0.3s ease;
 }
 .portfolio__list {
   padding: 0;
